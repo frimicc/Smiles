@@ -1,26 +1,129 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="25L-Ge-sDd" userLabel="Tray">
+                                <rect key="frame" x="0.0" y="344" width="320" height="224"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="excited" translatesAutoresizingMaskIntoConstraints="NO" id="7jq-FE-8uo">
+                                        <rect key="frame" x="32" y="32" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="QDW-X1-6dl"/>
+                                            <constraint firstAttribute="height" constant="64" id="QhM-o6-V0a"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="happy" translatesAutoresizingMaskIntoConstraints="NO" id="GpE-8w-eO8">
+                                        <rect key="frame" x="32" y="128" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="L6m-5R-4Y6"/>
+                                            <constraint firstAttribute="height" constant="64" id="Pe5-Vl-gCW"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wink" translatesAutoresizingMaskIntoConstraints="NO" id="2oG-zA-cze">
+                                        <rect key="frame" x="128" y="32" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="RDM-Vg-8mT"/>
+                                            <constraint firstAttribute="width" constant="64" id="kn1-Fo-d5k"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tongue" translatesAutoresizingMaskIntoConstraints="NO" id="tua-gk-LNL">
+                                        <rect key="frame" x="224" y="32" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="3Zl-Zg-BWL"/>
+                                            <constraint firstAttribute="height" constant="64" id="tMO-1j-uzb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sad" translatesAutoresizingMaskIntoConstraints="NO" id="ae7-uW-cK0">
+                                        <rect key="frame" x="224" y="128" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="46R-Nc-wph"/>
+                                            <constraint firstAttribute="height" constant="64" id="Jv4-Dl-c8E"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="vRW-tl-N17">
+                                        <rect key="frame" x="150" y="8" width="20" height="14"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dead" translatesAutoresizingMaskIntoConstraints="NO" id="Wqr-Ru-XjP">
+                                        <rect key="frame" x="128" y="128" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="Dua-6l-9db"/>
+                                            <constraint firstAttribute="width" constant="64" id="Mhn-ZC-AAN"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="Wqr-Ru-XjP" firstAttribute="centerY" secondItem="GpE-8w-eO8" secondAttribute="centerY" id="5nR-lv-dMC"/>
+                                    <constraint firstItem="7jq-FE-8uo" firstAttribute="leading" secondItem="25L-Ge-sDd" secondAttribute="leading" constant="32" id="EtA-M8-wgx"/>
+                                    <constraint firstItem="ae7-uW-cK0" firstAttribute="centerY" secondItem="Wqr-Ru-XjP" secondAttribute="centerY" id="HE4-xe-BdN"/>
+                                    <constraint firstItem="vRW-tl-N17" firstAttribute="top" secondItem="25L-Ge-sDd" secondAttribute="top" constant="8" id="PVG-MF-b9R"/>
+                                    <constraint firstItem="GpE-8w-eO8" firstAttribute="top" secondItem="7jq-FE-8uo" secondAttribute="bottom" constant="32" id="T7i-qW-KFl"/>
+                                    <constraint firstItem="2oG-zA-cze" firstAttribute="centerX" secondItem="25L-Ge-sDd" secondAttribute="centerX" id="ThV-Dz-YEA"/>
+                                    <constraint firstItem="2oG-zA-cze" firstAttribute="centerY" secondItem="7jq-FE-8uo" secondAttribute="centerY" id="UHt-Mx-ZiR"/>
+                                    <constraint firstItem="Wqr-Ru-XjP" firstAttribute="centerX" secondItem="2oG-zA-cze" secondAttribute="centerX" id="VXQ-1O-DvM"/>
+                                    <constraint firstItem="7jq-FE-8uo" firstAttribute="top" secondItem="25L-Ge-sDd" secondAttribute="top" constant="32" id="ZnU-DL-3Lw"/>
+                                    <constraint firstAttribute="height" constant="224" id="aCa-oY-oFk"/>
+                                    <constraint firstItem="tua-gk-LNL" firstAttribute="centerY" secondItem="7jq-FE-8uo" secondAttribute="centerY" id="aDp-yB-hMb"/>
+                                    <constraint firstItem="vRW-tl-N17" firstAttribute="centerX" secondItem="25L-Ge-sDd" secondAttribute="centerX" id="d8a-z0-pvE"/>
+                                    <constraint firstItem="ae7-uW-cK0" firstAttribute="centerX" secondItem="tua-gk-LNL" secondAttribute="centerX" id="i7h-8E-b7w"/>
+                                    <constraint firstItem="GpE-8w-eO8" firstAttribute="centerX" secondItem="7jq-FE-8uo" secondAttribute="centerX" id="kOt-FC-Odl"/>
+                                    <constraint firstAttribute="trailing" secondItem="tua-gk-LNL" secondAttribute="trailing" constant="32" id="qrs-7S-9Zh"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hMF-fd-RjH" appends="YES" id="IeZ-wB-d9n"/>
+                                </connections>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="25L-Ge-sDd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FNB-jH-0pQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="25L-Ge-sDd" secondAttribute="bottom" id="Qab-LU-kAh"/>
+                            <constraint firstItem="25L-Ge-sDd" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="sR7-QM-sPU"/>
+                            <constraint firstItem="25L-Ge-sDd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vuA-Gc-Ss7"/>
+                            <constraint firstAttribute="trailing" secondItem="25L-Ge-sDd" secondAttribute="trailing" id="wco-Tl-bwe"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="trayView" destination="25L-Ge-sDd" id="a9B-5t-kaF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="hMF-fd-RjH">
+                    <connections>
+                        <action selector="onTrayPanGesture:" destination="BYZ-38-t0r" id="irq-vm-aen"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="116.25" y="122.53521126760563"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dead" width="60" height="60"/>
+        <image name="down_arrow" width="20" height="14"/>
+        <image name="excited" width="60" height="60"/>
+        <image name="happy" width="60" height="60"/>
+        <image name="sad" width="60" height="60"/>
+        <image name="tongue" width="60" height="60"/>
+        <image name="wink" width="60" height="60"/>
+    </resources>
 </document>
